@@ -1,0 +1,254 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "COPEREX",
+    "dateExported": "2024-02-26T01:20:20.469Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "37d837c4-e8a3-4a21-9f5e-1261563df2e6",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-02-26T00:20:06.670Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "1003ee45-a9bf-4d2c-a9fd-56e848bc8ef0",
+            "name": "category",
+            "containerId": "",
+            "created": "2024-02-26T00:20:13.005Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "339e3f57-36ab-46be-8593-dc637c6a3e4f",
+            "name": "company",
+            "containerId": "",
+            "created": "2024-02-26T00:20:19.421Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "1a06e6c9-b098-4cc7-99e6-630f4538ac34",
+            "colId": "897a2142-f9e5-4677-a9f7-bed0416d7924",
+            "containerId": "37d837c4-e8a3-4a21-9f5e-1261563df2e6",
+            "name": "signUp",
+            "url": "user/add",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-26T00:23:00.308Z",
+            "modified": "2024-02-26T00:24:05.984Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Juan"
+                    },
+                    {
+                        "name": "username",
+                        "value": "juan"
+                    },
+                    {
+                        "name": "password",
+                        "value": "hola"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0511de04-fbd6-4dbd-8c47-30ebf0b77e90",
+            "colId": "897a2142-f9e5-4677-a9f7-bed0416d7924",
+            "containerId": "37d837c4-e8a3-4a21-9f5e-1261563df2e6",
+            "name": "login",
+            "url": "user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-26T00:26:45.290Z",
+            "modified": "2024-02-26T00:27:35.319Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "juan"
+                    },
+                    {
+                        "name": "password",
+                        "value": "hola"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "10fcc9cf-4a7b-4f41-8828-d9e3fdfabe04",
+            "colId": "897a2142-f9e5-4677-a9f7-bed0416d7924",
+            "containerId": "1003ee45-a9bf-4d2c-a9fd-56e848bc8ef0",
+            "name": "add",
+            "url": "category/add",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-26T00:31:45.359Z",
+            "modified": "2024-02-26T00:46:07.405Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Tikal"
+                    },
+                    {
+                        "name": "description",
+                        "value": "yo"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "29fbaf66-6611-40c6-9b68-058e248c186f",
+            "colId": "897a2142-f9e5-4677-a9f7-bed0416d7924",
+            "containerId": "339e3f57-36ab-46be-8593-dc637c6a3e4f",
+            "name": "add",
+            "url": "company/add",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-26T00:36:03.078Z",
+            "modified": "2024-02-26T01:03:54.876Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Tikal dsfas"
+                    },
+                    {
+                        "name": "impact",
+                        "value": "MEDIUM"
+                    },
+                    {
+                        "name": "yearExp",
+                        "value": "40"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65dbdf4f140d5c08e4a91258"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f62f4a27-0d65-42ac-bc5f-f0ee6974c0fa",
+            "colId": "897a2142-f9e5-4677-a9f7-bed0416d7924",
+            "containerId": "339e3f57-36ab-46be-8593-dc637c6a3e4f",
+            "name": "update",
+            "url": "company/update/65dbdd52d7db21e8fdddff41",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-26T00:40:31.039Z",
+            "modified": "2024-02-26T00:41:32.251Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "impact",
+                        "value": "HIGH"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5728b9f8-9120-414a-839c-01bd03a565fc",
+            "colId": "897a2142-f9e5-4677-a9f7-bed0416d7924",
+            "containerId": "339e3f57-36ab-46be-8593-dc637c6a3e4f",
+            "name": "filterAZ",
+            "url": "company/filterAZ",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-02-26T00:44:55.735Z",
+            "modified": "2024-02-26T00:46:28.703Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "779abf52-841d-4c03-9045-cb350f430100",
+            "colId": "897a2142-f9e5-4677-a9f7-bed0416d7924",
+            "containerId": "339e3f57-36ab-46be-8593-dc637c6a3e4f",
+            "name": "filterZA",
+            "url": "company/filterZA",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-26T00:47:29.724Z",
+            "modified": "2024-02-26T00:47:39.011Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2d4667b9-1824-4983-9565-ea114a61ddd8",
+            "colId": "897a2142-f9e5-4677-a9f7-bed0416d7924",
+            "containerId": "339e3f57-36ab-46be-8593-dc637c6a3e4f",
+            "name": "filterYear",
+            "url": "company/filterYear",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-02-26T00:49:28.753Z",
+            "modified": "2024-02-26T00:49:39.093Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b1b58641-66fb-4620-8b36-a2b50810d3c7",
+            "colId": "897a2142-f9e5-4677-a9f7-bed0416d7924",
+            "containerId": "339e3f57-36ab-46be-8593-dc637c6a3e4f",
+            "name": "filterImpact",
+            "url": "company/filterImpact",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-02-26T00:50:47.980Z",
+            "modified": "2024-02-26T00:51:00.750Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "398cf69e-ad16-486d-905d-a1a9e6537f15",
+            "colId": "897a2142-f9e5-4677-a9f7-bed0416d7924",
+            "containerId": "339e3f57-36ab-46be-8593-dc637c6a3e4f",
+            "name": "generateXlsx",
+            "url": "company/generateExcel",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-02-26T01:02:12.159Z",
+            "modified": "2024-02-26T01:02:30.150Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:3214/"
+        }
+    }
+}

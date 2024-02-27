@@ -47,13 +47,19 @@ export const signUp = async (req, res) => {
 
 export const login = async (req, res) => {
     try {
-        let { username, password } = req.body
-        let user = await User.findOne({ username })
-        if (user && await comparePassword(password, user.password)) {
+        let { user, password } = req.body
+        let users = await User.findOne({
+            $or: [
+                { username: user },
+                { email: user }
+            ]
+        });
+        if (users && await comparePassword(password, users.password)) {
             let loggedUser = {
-                uid: user.id,
-                username: user.username,
-                name: user.name,
+                uid: users.id,
+                username: users.username,
+                email: users.email,
+                name: users.name,
             }
             let token = await generateJwt(loggedUser)
             return res.send({ message: `Welcome ${loggedUser.name}`, loggedUser, token })

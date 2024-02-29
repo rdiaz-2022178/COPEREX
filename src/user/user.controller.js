@@ -17,6 +17,7 @@ export const defaultAdmin = async () => {
         let data = {
             name: 'Default',
             username: 'default',
+            email: 'default@gmail.com',
             password: await encrypt('hola'),
         }
 

@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "COPEREX",
-    "dateExported": "2024-02-26T01:20:20.469Z",
+    "dateExported": "2024-02-29T23:25:38.000Z",
     "version": "1.1",
     "folders": [
         {
@@ -36,7 +36,7 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-02-26T00:23:00.308Z",
-            "modified": "2024-02-26T00:24:05.984Z",
+            "modified": "2024-02-27T21:39:39.643Z",
             "headers": [],
             "params": [],
             "body": {
@@ -45,15 +45,19 @@
                 "form": [
                     {
                         "name": "name",
-                        "value": "Juan"
+                        "value": "Izzel"
                     },
                     {
                         "name": "username",
-                        "value": "juan"
+                        "value": "izzel"
                     },
                     {
                         "name": "password",
                         "value": "hola"
+                    },
+                    {
+                        "name": "email",
+                        "value": "rodro@gmail.com"
                     }
                 ]
             },
@@ -68,7 +72,7 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-02-26T00:26:45.290Z",
-            "modified": "2024-02-26T00:27:35.319Z",
+            "modified": "2024-02-27T21:46:11.122Z",
             "headers": [],
             "params": [],
             "body": {
@@ -76,8 +80,8 @@
                 "raw": "",
                 "form": [
                     {
-                        "name": "username",
-                        "value": "juan"
+                        "name": "user",
+                        "value": "izzel"
                     },
                     {
                         "name": "password",
